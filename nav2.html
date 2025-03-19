@@ -1,0 +1,154 @@
+
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            height: 200%vh;
+            margin-left:55px ;
+            margin-right: 55px;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns:  1fr 1fr 1fr;
+            gap: 40px;
+            
+             text-align: center;  justify-content: center;     
+        grid-template-areas: " g1 g2 g3 "
+                                             " g4 g4 g5 "
+                                             " g4 g4 g6 ";
+           
+         transition-duration: 2s;             
+        transition-delay: 2s;               
+        }
+        
+        .g1{
+            grid-area: g1;
+        background-color: bisque;
+        transition-duration: 2s;
+           
+        }
+        .g2{
+            grid-area: g2;
+        background-color: bisque;   
+        transition-duration: 2s;
+        }
+        .g3{
+            grid-area: g3;
+            background-color: bisque;
+            transition-duration: 2s;
+        }
+        .g4{
+            grid-area: g4;
+        background-color: bisque;   
+        transition-duration: 2s;
+        }
+        .g5{
+            grid-area: g5;
+    background-color: bisque;
+    transition-duration: 2s;
+        }
+        .g6{
+            grid-area: g6;
+        background-color: bisque;  
+        transition-duration: 2s linear;
+        }
+        .txt{
+            animation: blink 1s linear infinite;
+            font-size: 40px;
+            font-weight: bolder;
+            color: rgb(38, 249, 137);
+            position:fixed;
+            background-color: rgb(255, 0, 191);
+            padding: 20px 100px;
+            text-align: center;
+            justify-content: center;
+            margin-left:  0px;
+            margin-right: 0px;
+        }
+        @keyframes blink{
+            50%{
+                opacity: 0;
+            }
+        }
+        table {
+            font-size: 60px;
+        }
+        marquee{
+            font-size: 60px;
+        }
+        .g1:hover{
+            background-color: rgb(255, 140, 0);
+            width: 1100px;
+        }
+        .g2:hover{
+            background-color:rgb(2, 171, 250) ;
+        width: 1000px;
+        height: 800px;
+        }
+        .g3:hover{
+            background-color: rgb(132, 0, 255);
+            width: 1000px;
+            height: 800px;           
+        }
+        .g4 :hover{
+            background-color:rgb(0, 247, 255) ;
+            
+        }
+        .g5:hover{
+            background-color: rgb(112, 47, 0);
+            width: 1000px;
+            height: 800px;
+        }
+        .g6:hover{
+            background-color: rgb(7, 59, 59);
+             
+        }
+        button{
+            height: 70px;
+            width: 200px;
+            font-size: 40px;
+            border-radius: 30px;
+            background-color: rgb(222, 133, 24);
+            transition-duration: 0.5s;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        button:hover{
+            background-color: rgb(254, 199, 132);
+            width: 250px;
+            height: 90px;
+            text-decoration-style: bold;
+           
+        }
+        .syren{
+            position: absolute;
+            font-size: 55px;
+            text-shadow: 10px 2px 5px rgb(216, 56, 56);
+           margin-left: 197px;
+           animation: blink 0.3s linear infinite;
+           margin-top: 27px;
+            color: rgb(255, 0, 0);
+        }
+    </style>     
+</head>
+<body bgcolor="white">
+  
+    <center><pre><span class="txt"> Special Offers only today !!!                 Special Offers only today !!!                Special Offers only today !!!                 Special Offers only today !!!</span></pre></center>
+     <span class="syren">---</span>
+      <table> <tr><td> <img src="img7.png" > </td><td>Assured Fastest Delivery through Ambulance <br>First time Ever in the world</td></tr></table>
+    <marquee direction="left" scroll delay="200"><img src="img8.png">Hurry up!!!  </marquee>
+    <div class="grid">      
+        <div class="g1"><h1><img src="img11.png" ><br><del>Airtel</del>Kaathutel Modem<br><del>4,50,000</del> 4,49,999/- Only<center><br><br><button id="b1">Buy Now</button>  </center></h1></div>
+        <div class="g2"><h1><img src="img12.png" ><br><del>Graham Bell</del>Calling Bell's<br> Telephone<del> 8,80,000</del> 8,79,000/- Only<center><br><br><button id="b1">Buy Now</button></center></h1></div>
+        <div class="g3"><h1><img src="img13.png"><br><del>Babbage</del>Cabbage's Computer<br><del>1,00,00,000</del>  99,99,999/- Only<center><br><br><button id="b1">Buy Now</button></center></h1></div>
+        <div class="g4"><h1><img src="img14.png"><br><del>Sony</del>Tony combo<br><del>15,00,000</del> 14,99,999/- Only<center><br><br><button id="b1">Buy Now</button></center></h1></div>
+        <div class="g5"><h1> <img src="img15.png"><br><del>Samsung</del>Sarathsung Laptop<del><br>90,000</del> 89,999/- Only<center><br><br><button id="b1">Buy Now</button></center></h1></div>
+        <div class="g6"> <h1><img src="img16.png"><br><del>Puma</del>Coma Footwear <br><del>8,000</del> 7,999/- Only<center><br><br><button id="b1">Buy Now</button></center></h1></div>
+    </div>
+</body>
+</html>
